@@ -1,168 +1,214 @@
 <!DOCTYPE html>
 <html lang="id">
+<head>
+  <!--
+  =========================================================
+  MATERI: PAGE TITLE / ELEMEN JUDUL HTML
+  =========================================================
+
+  Pada bagian ini, kita akan kembali membahas elemen judul
+  pada HTML, yaitu <title>.
+
+  Sebenarnya, di pertemuan sebelumnya kita sudah sempat
+  menyinggung elemen judul, namun pada pertemuan kali ini
+  kita akan membahasnya lebih dalam dan lebih terstruktur.
+  dan ini tidak terlalu rumit sekali
+  =========================================================
+  -->
+
+  <!--
+  ---------------------------------------------------------
+  1. APA ITU PAGE TITLE?
+  ---------------------------------------------------------
+
+  Page Title adalah judul halaman web yang ditulis di dalam
+  tag <title> dan diletakkan di dalam <head>, bukan di <body>.
+
+  Judul ini TIDAK muncul di isi halaman, tetapi muncul di:
+  - Tab browser
+  - Bookmark / favorit
+  - Hasil pencarian Google (SEO)
+  ---------------------------------------------------------
+  -->
+  <title>HTML Tutorial</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <h1>Belajar HTML</h1>
+  <p>Ini adalah isi halaman web.</p>
+
+  <!--
+  ---------------------------------------------------------
+  HAL YANG PERLU DIPAHAMI
+  ---------------------------------------------------------
+
+  - <title> BUKAN konten halaman
+  - <title> adalah identitas halaman
+  ---------------------------------------------------------
+  -->
+
+  <!--
+  =========================================================
+  2. DI MANA PAGE TITLE DITAMPILKAN?
+  =========================================================
+
+  1. TAB BROWSER
+     Judul halaman akan tampil di tab browser, sehingga
+     pengguna tahu halaman apa yang sedang dibuka.
+
+  2. BOOKMARK / FAVORIT
+     Saat halaman disimpan ke bookmark, judul <title>
+     akan digunakan sebagai nama default.
+
+  3. HASIL PENCARIAN (SEO)
+     Mesin pencari menggunakan <title> untuk:
+     - Memahami isi halaman
+     - Menentukan relevansi pencarian
+     - Menampilkan judul di hasil pencarian
+
+     Karena itu, <title> sangat penting untuk SEO.
+  =========================================================
+  -->
+
+  <!--
+  =========================================================
+  3. APA ITU JUDUL YANG BAGUS?
+  =========================================================
+
+  Judul yang bagus adalah judul yang:
+  - Menggambarkan isi halaman
+  - Jelas dan mudah dipahami
+  - Tidak terlalu pendek
+  - Tidak terlalu panjang
+  - Tidak menipu pengguna
+  =========================================================
+  -->
+
+  <!--
+  ---------------------------------------------------------
+  CONTOH JUDUL BURUK
+  ---------------------------------------------------------
+  <title>Home</title>
+
+  Masalah:
+  - Tidak jelas
+  - Tidak informatif
+  - Buruk untuk SEO
+  ---------------------------------------------------------
+  -->
+
+  <!--
+  ---------------------------------------------------------
+  CONTOH JUDUL YANG BAIK
+  ---------------------------------------------------------
+  <title>Belajar HTML Dasar untuk Pemula | Web Development</title>
+
+  Kenapa ini bagus?
+  - Menjelaskan isi halaman
+  - Mengandung kata kunci
+  - Mudah dipahami manusia & mesin
+  ---------------------------------------------------------
+  -->
+
+  <!--
+  =========================================================
+  4. PERBEDAAN <title> DAN <h1> (PENTING!)
+  =========================================================
+
+  <title> : Judul halaman (browser & SEO)
+  <h1>    : Judul konten di dalam halaman
+
+  Contoh yang benar:
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Layout - Versi Pemula</title>
-
-    <!--
-    =====================================================
-    FILE INI ADALAH MATERI + CONTOH HTML LAYOUT
-    LEVEL 3 — LAYOUT & SEMANTIC HTML
-
-    Catatan penting:
-    - HTML digunakan untuk STRUKTUR dan MAKNA
-    - BUKAN untuk mengatur posisi (itu tugas CSS)
-    - Semua penjelasan ada di dalam komentar
-    =====================================================
-  --></head>
+    <title>Tutorial HTML Dasar</title>
+  </head>
 
   <body>
-    <!--
-    ======================
-    HEADER
-    ======================
-    <header> digunakan untuk bagian pembuka halaman.
-    Biasanya berisi:
-    - Judul website
-    - Logo
-    - Intro singkat
+    <h1>Belajar HTML dari Nol</h1>
+  </body>
 
-    BUKAN karena posisinya di atas,
-    tapi karena PERANNYA sebagai header.
+  Kesimpulan:
+  Keduanya berbeda fungsi dan tidak saling menggantikan.
+  =========================================================
   -->
-    <header>
-      <h1>Website Belajar HTML Layout</h1>
-      <p>Belajar struktur halaman web dengan benar</p>
-    </header>
 
-    <!--
-    ======================
-    NAVIGATION
-    ======================
-    <nav> digunakan khusus untuk menu navigasi.
+  <!--
+  =========================================================
+  5. ATURAN PRAKTIS PAGE TITLE (VERSI DUNIA KERJA)
+  =========================================================
 
-    Jangan pakai <div> untuk menu,
-    karena <nav> memberi MAKNA navigasi
-    ke browser, SEO, dan screen reader.
+  - Gunakan hanya 1 <title> per halaman
+  - Letakkan <title> di dalam <head>
+  - Panjang ideal sekitar 50–60 karakter
+  - Jangan hanya satu kata
+  - Jangan copy–paste judul yang sama di semua halaman
+  =========================================================
   -->
-    <nav>
-      <a href="#">Home</a> | <a href="#">Artikel</a> | <a href="#">Tentang</a> |
-      <a href="#">Kontak</a>
-    </nav>
 
-    <!--
-    ======================
-    MAIN CONTENT
-    ======================
-    <main> adalah konten UTAMA halaman.
-    Biasanya hanya ADA SATU <main> dalam satu halaman.
+  <!--
+  =========================================================
+  6. CONTOH PAGE TITLE DI WEBSITE NYATA
+  =========================================================
 
-    Tidak boleh berisi:
-    - header
-    - nav
-    - footer
+  Halaman Beranda:
+  <title>Jasa Pembuatan Website Profesional | Nama Brand</title>
+
+  Halaman Artikel:
+  <title>Apa Itu HTML? Pengertian dan Fungsi HTML untuk Pemula</title>
+
+  Halaman Login:
+  <title>Login Akun | Aplikasi Saya</title>
+  =========================================================
   -->
-    <main>
-      <!--
-      ======================
-      SECTION
-      ======================
-      <section> digunakan untuk mengelompokkan konten
-      berdasarkan TOPIK.
 
-      Biasanya memiliki judul (h2, h3, dll).
-    -->
-      <section>
-        <h2>Artikel Terbaru</h2>
+  <!--
+  =========================================================
+  7. KESALAHAN UMUM PEMULA
+  =========================================================
 
-        <!--
-        ======================
-        ARTICLE
-        ======================
-        <article> adalah konten MANDIRI.
-        Artinya:
-        - Bisa berdiri sendiri
-        - Bisa dipindah ke halaman lain
-        - Masih punya makna
-
-        Contoh:
-        - Artikel blog
-        - Post
-        - Komentar
-      -->
-        <article>
-          <h3>Apa itu HTML Layout?</h3>
-          <p>
-            HTML Layout adalah cara menyusun halaman web menjadi bagian-bagian
-            yang jelas dan bermakna.
-          </p>
-        </article>
-
-        <article>
-          <h3>Kenapa Semantic HTML Penting?</h3>
-          <p>
-            Karena membuat struktur web lebih rapi, mudah dibaca, dan
-            profesional.
-          </p>
-        </article>
-      </section>
-
-      <!--
-      ======================
-      ASIDE
-      ======================
-      <aside> digunakan untuk konten SAMPINGAN.
-
-      Contoh:
-      - Sidebar
-      - Artikel terkait
-      - Iklan
-    -->
-      <aside>
-        <h4>Artikel Terkait</h4>
-        <ul>
-          <li>Belajar HTML Dasar</li>
-          <li>Semantic HTML</li>
-          <li>CSS Layout</li>
-        </ul>
-      </aside>
-    </main>
-
-    <!--
-    ======================
-    FOOTER
-    ======================
-    <footer> adalah bagian PENUTUP halaman
-    atau penutup suatu section.
-
-    Biasanya berisi:
-    - Copyright
-    - Info tambahan
-    - Link penting
+  - Lupa menggunakan <title>
+  - Semua halaman memakai judul yang sama
+  - Judul terlalu pendek
+  - Mengira <h1> sudah cukup
+  =========================================================
   -->
-    <footer>
-      <p>&copy; 2026 Belajar Web Development</p>
-    </footer>
 
-    <!--
-    =====================================================
-    PENUTUP (MENTOR MODE)
+  <!--
+  =========================================================
+  KESIMPULAN
+  =========================================================
 
-    Jika HTML ini dibaca TANPA CSS:
-    - Strukturnya tetap jelas
-    - Judul tetap terbaca
-    - Konten tetap masuk akal
+  - <title> adalah judul halaman web
+  - Ditampilkan di tab browser, bookmark, dan hasil pencarian
+  - Sangat penting untuk SEO dan pengalaman pengguna
+  - <title> berbeda dengan <h1>
+  - Judul yang baik harus jelas, bermakna, dan relevan
 
-    Itu tanda HTML Layout sudah BENAR.
+  HTML yang baik bukan hanya terlihat rapi,
+  tapi juga dipahami oleh browser, mesin pencari,
+  dan manusia.
 
-    Ingat:
-    - HTML = struktur & makna
-    - CSS = tampilan & posisi
-    - Jangan dibalik
+  Page Title mungkin terlihat kecil,
+  tapi dampaknya besar dalam website profesional.
 
-    Jika kamu paham file ini,
-    kamu SIAP lanjut ke CSS Flexbox.
-    =====================================================
-  --></body>
+  Sebagai pemula, tidak perlu terburu-buru
+  memikirkan hal yang kompleks.
+
+  Untuk sekarang:
+  - Fokus memahami dasar <title>
+  - Pahami fungsinya dengan benar
+
+  Nantinya kita akan belajar:
+  - Berpindah halaman (multi-page website)
+  - Menggunakan menu navigasi
+  - Mengubah <title> di setiap halaman sesuai kontennya
+  =========================================================
+  -->
+
+</body>
 </html>
