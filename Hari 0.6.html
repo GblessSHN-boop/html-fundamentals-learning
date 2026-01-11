@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Layout - Versi Pemula</title>
+
+    <!--
+    =====================================================
+    FILE INI ADALAH MATERI + CONTOH HTML LAYOUT
+    LEVEL 3 — LAYOUT & SEMANTIC HTML
+
+    Catatan penting:
+    - HTML digunakan untuk STRUKTUR dan MAKNA
+    - BUKAN untuk mengatur posisi (itu tugas CSS)
+    - Semua penjelasan ada di dalam komentar
+    =====================================================
+  --></head>
+
+  <body>
+    <!--
+    ======================
+    HEADER
+    ======================
+    <header> digunakan untuk bagian pembuka halaman.
+    Biasanya berisi:
+    - Judul website
+    - Logo
+    - Intro singkat
+
+    BUKAN karena posisinya di atas,
+    tapi karena PERANNYA sebagai header.
+  -->
+    <header>
+      <h1>Website Belajar HTML Layout</h1>
+      <p>Belajar struktur halaman web dengan benar</p>
+    </header>
+
+    <!--
+    ======================
+    NAVIGATION
+    ======================
+    <nav> digunakan khusus untuk menu navigasi.
+
+    Jangan pakai <div> untuk menu,
+    karena <nav> memberi MAKNA navigasi
+    ke browser, SEO, dan screen reader.
+  -->
+    <nav>
+      <a href="#">Home</a> | <a href="#">Artikel</a> | <a href="#">Tentang</a> |
+      <a href="#">Kontak</a>
+    </nav>
+
+    <!--
+    ======================
+    MAIN CONTENT
+    ======================
+    <main> adalah konten UTAMA halaman.
+    Biasanya hanya ADA SATU <main> dalam satu halaman.
+
+    Tidak boleh berisi:
+    - header
+    - nav
+    - footer
+  -->
+    <main>
+      <!--
+      ======================
+      SECTION
+      ======================
+      <section> digunakan untuk mengelompokkan konten
+      berdasarkan TOPIK.
+
+      Biasanya memiliki judul (h2, h3, dll).
+    -->
+      <section>
+        <h2>Artikel Terbaru</h2>
+
+        <!--
+        ======================
+        ARTICLE
+        ======================
+        <article> adalah konten MANDIRI.
+        Artinya:
+        - Bisa berdiri sendiri
+        - Bisa dipindah ke halaman lain
+        - Masih punya makna
+
+        Contoh:
+        - Artikel blog
+        - Post
+        - Komentar
+      -->
+        <article>
+          <h3>Apa itu HTML Layout?</h3>
+          <p>
+            HTML Layout adalah cara menyusun halaman web menjadi bagian-bagian
+            yang jelas dan bermakna.
+          </p>
+        </article>
+
+        <article>
+          <h3>Kenapa Semantic HTML Penting?</h3>
+          <p>
+            Karena membuat struktur web lebih rapi, mudah dibaca, dan
+            profesional.
+          </p>
+        </article>
+      </section>
+
+      <!--
+      ======================
+      ASIDE
+      ======================
+      <aside> digunakan untuk konten SAMPINGAN.
+
+      Contoh:
+      - Sidebar
+      - Artikel terkait
+      - Iklan
+    -->
+      <aside>
+        <h4>Artikel Terkait</h4>
+        <ul>
+          <li>Belajar HTML Dasar</li>
+          <li>Semantic HTML</li>
+          <li>CSS Layout</li>
+        </ul>
+      </aside>
+    </main>
+
+    <!--
+    ======================
+    FOOTER
+    ======================
+    <footer> adalah bagian PENUTUP halaman
+    atau penutup suatu section.
+
+    Biasanya berisi:
+    - Copyright
+    - Info tambahan
+    - Link penting
+  -->
+    <footer>
+      <p>&copy; 2026 Belajar Web Development</p>
+    </footer>
+
+    <!--
+    =====================================================
+    PENUTUP (MENTOR MODE)
+
+    Jika HTML ini dibaca TANPA CSS:
+    - Strukturnya tetap jelas
+    - Judul tetap terbaca
+    - Konten tetap masuk akal
+
+    Itu tanda HTML Layout sudah BENAR.
+
+    Ingat:
+    - HTML = struktur & makna
+    - CSS = tampilan & posisi
+    - Jangan dibalik
+
+    Jika kamu paham file ini,
+    kamu SIAP lanjut ke CSS Flexbox.
+    =====================================================
+  --></body>
+</html>
