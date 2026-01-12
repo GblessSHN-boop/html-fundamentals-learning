@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML Table</title>
+
+    <!--
+  =========================================================
+  MATERI: HTML TABLE (TABEL DALAM HTML)
+  =========================================================
+
+  Tabel HTML digunakan untuk MENAMPILKAN DATA
+  dalam bentuk baris dan kolom.
+
+  Tabel BUKAN digunakan untuk layout halaman.
+  Tabel khusus untuk data yang terstruktur.
+
+  Contoh penggunaan tabel di dunia kerja:
+  - Daftar user
+  - Data pelanggan
+  - Admin panel
+  - Laporan transaksi
+  - Sistem informasi
+
+  =========================================================
+  STRUKTUR DASAR TABEL HTML
+  =========================================================
+
+  <table>  : pembungkus seluruh tabel
+  <tr>     : table row (baris)
+  <td>     : table data (sel data)
+  <th>     : table header (judul kolom)
+
+  Urutan dasar:
+  table
+   └── tr
+        ├── th / td
+        ├── th / td
+        └── th / td
+
+  =========================================================
+  CATATAN PENTING
+  =========================================================
+
+  1. Setiap <tr> sebaiknya memiliki jumlah <td> yang sama
+  2. <th> digunakan untuk header tabel
+  3. Styling tabel dilakukan dengan CSS, bukan HTML
+  4. Tabel dipakai saat data berasal dari backend / database
+
+  =========================================================
+  --></head>
+
+  <body>
+    <!--
+  =========================================================
+  CONTOH TABEL HTML SEDERHANA
+  =========================================================
+
+  Contoh ini menyerupai data yang sering muncul
+  di admin panel atau dashboard aplikasi web.
+  -->
+
+    <h1>CEO yang menyembunyikan identitasnya</h1>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+      <!--
+      BARIS PERTAMA:
+      Menggunakan <th> sebagai header kolom
+    -->
+      <tr>
+        <th>Ceo</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+
+      <!--
+      BARIS DATA
+      Setiap <tr> = 1 data
+      Setiap <td> = 1 kolom
+    -->
+      <tr>
+        <td>Gland Siahaan</td>
+        <td>Medan</td>
+        <td>Indonesia</td>
+      </tr>
+
+      <tr>
+        <td>Ariel Simanjuntak</td>
+        <td>Bangalore</td>
+        <td>India</td>
+      </tr>
+
+      <tr>
+        <td>Natxuun</td>
+        <td>Las Vegas</td>
+        <td>Amerika</td>
+      </tr>
+
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+    </table>
+
+    <!--
+  =========================================================
+  KESIMPULAN MATERI HTML TABLE
+  =========================================================
+
+  - Tabel HTML digunakan untuk DATA, bukan layout
+  - Elemen utama tabel:
+      <table>  → tabel
+      <tr>     → baris
+      <td>     → sel data
+      <th>     → header
+  - Tabel sangat sering digunakan di:
+      • Admin panel
+      • Dashboard
+      • Full Stack application
+
+  HTML table terlihat sederhana,
+  tapi menjadi fondasi penting untuk
+  menampilkan data dari backend.
+
+  =========================================================
+  MOTIVASI BELAJAR
+  =========================================================
+
+  Tidak perlu langsung mahir.
+  Hari ini paham struktur tabel,
+  itu sudah kemajuan.
+
+  Belajar web development bukan soal cepat,
+  tapi soal konsisten.
+
+  Sedikit demi sedikit,
+  HTML akan terasa masuk akal.
+
+  Pelan tidak apa-apa.
+  Yang penting tidak berhenti.
+  =========================================================
+  --></body>
+</html>
