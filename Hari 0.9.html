@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+
+HTML Styles - CSS
+
+HTML CSS adalah gaya atau style yang digunakan untuk mengatur tampilan halaman web
+sederhananya HTML itu rumah sedangkan CSS itu warna dan dekorasi Rumah tersebut.
+Apa saja yang bisa di atur oleh CSS?
+- Warna
+- Tulisan
+- Jarak & Ukuran
+- Posisi & tata letak
+- Tampilan di berbagai ukuran layar
+- Animasi dan efek
+masih banyak lagi, dan ini sangat penting untuk membuat website yang menarik dan nyaman di lihat serta profesional.
+
+CATATAN :
+    Inline   → CSS ditulis langsung di dalam elemen HTMLmenggunakan  atribut style.
+
+    Internal → CSS ditulis di dalam tag <style> yang berada di    bagian <head>.
+
+    External → CSS ditulis di file terpisah dan dihubungkan keHTML     menggunakan tag <link>.
+
+1.CSS sebaris (Inline CSS)
+    Apa itu CSS sebaris? CSS sebaris adalah CSS yang ditulis langsung di dalam elemen HTML
+
+    Contoh penggunaan:
+-->
+
+    <h1 style="color: rgb(red, green, blue)">Ini adalah CSS sebaris</h1>
+    <!-- Contoh CSS sebaris dengan banyak style -->
+
+    <p
+      style="
+        color: #374151;
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: Arial, sans-serif;
+
+        background-color: #f3f4f6;
+        padding: 15px;
+        max-width: 600px;
+        margin: 20px auto;
+
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+      ">
+      Ini adalah contoh paragraf yang menggunakan banyak style CSS langsung di
+      dalam atribut <b>style</b>.
+    </p>
+
+    <h2
+      style="
+        color: #ffffff;
+        font-size: 32px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+
+        background-color: #380000;
+        padding: 14px 24px;
+        margin-bottom: 20px;
+
+        border-radius: 8px;
+
+        /* RGB Glow Effect */
+        box-shadow: 0 0 8px rgba(255, 0, 0, 0.7), 0 0 16px rgba(0, 255, 0, 0.6),
+          0 0 24px rgba(0, 0, 255, 0.6);
+      ">
+      Belajar CSS Sebaris
+    </h2>
+
+    <button
+      style="
+        background-color: #2563eb;
+        color: #ffffff;
+        font-size: 14px;
+
+        padding: 10px 20px;
+        margin-top: 15px;
+
+        border: none;
+        border-radius: 6px;
+
+        cursor: pointer;
+      ">
+      Klik Saya
+    </button>
+
+    <!--
+
+    Kesimpulannya, CSS sebaris sangat baik untuk belajar dasar CSS, tetapi bukan solusi untuk website yang besar atau jangka panjang.
+    Di dunia kerja, CSS sebaris biasanya hanya digunakan untuk   contoh, testing, atau kasus khusus, sedangkan styling utama dipisahkan ke file CSS eksternal.
+
+2.CSS Internal (Internal CSS)
+    CSS Internal adalah CSS yang dituliskan di dalam tag <style> tepatnya di bagian <head>
+
+    Contoh penggunaan:
+----------------------------------------
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+----------------------------------------
+    CSS Internal adalah cara penulisan CSS yang ditempatkan di dalam tag <style> pada bagian <head> HTML. Metode ini digunakan untuk mengatur tampilan elemen pada satu halaman saja, cocok untuk pembelajaran, percobaan, atau proyek kecil. Namun, dalam praktik profesional, CSS Internal kurang efisien untuk proyek besar karena sulit dikelola dan tidak bisa digunakan ulang di banyak halaman.
+
+3.CSS Eksternal (External CSS)
+    CSS External adalah CSS yang di tuliskan dengan file terpisah dengan menggunakan extensi ".css",yang berarti
+    file CSS dan HTML di pisahkan secara tempat tapi masih memiliki hubungan.
+
+    Contoh penggunaan:
+-----------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">  |-> ini lah link yang di gunakan untuk menghubungkan file CSS Eksternal 
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+-----------------------------------------------------------
+    Fungsi <link>:
+
+Menghubungkan HTML dengan file CSS
+
+Memberi tahu browser: “pakai style dari file ini”
+
+    CSS eksternal adalah cara paling rapi dan profesional untuk mengatur tampilan website.
+    Dipakai untuk banyak halaman, mudah dirawat, dan menjadi standar di dunia kerja.
+
+
+
+    KESIMPULANNYA:
+
+CSS digunakan untuk mengatur tampilan website agar rapi, menarik, dan nyaman dilihat.
+Terdapat tiga cara penulisan CSS: Inline, Internal, dan Eksternal.
+Untuk pembelajaran, inline dan internal CSS sangat membantu memahami dasar, namun CSS eksternal adalah standar yang digunakan di dunia kerja karena lebih rapi dan mudah dirawat.
+
+Sebagai lanjutan, saya berencana membuat repository css-fundamentals-learning untuk mempelajari CSS lebih dalam dengan referensi dari W3Schools.
+
+-->
+  </body>
+</html>
