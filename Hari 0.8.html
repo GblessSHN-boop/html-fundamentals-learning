@@ -8,360 +8,156 @@
   <body>
     <!--
 
-HTML QUOTATION / KUTIPAN HTML
+HTML Styles - CSS
 
-Pada sesi kali ini kita akan membahas memberi makna pada kutipan dalam HTML
-dengan menggunakan elemen-elemen khusus untuk kutipan. HTML juga bukan hanya
-memberikan tulisan tapi memberikan makna dan arti pada tulisan tersebut
-Dengan elemen ini kita akan memberi tahu
-- Browser
-- Mesin pencari (SEO)
-- Screen reader
-- Developer lain
-bahwa tulisan tersebut adalah sebuah kutipan.
+HTML CSS adalah gaya atau style yang digunakan untuk mengatur tampilan halaman web
+sederhananya HTML itu rumah sedangkan CSS itu warna dan dekorasi Rumah tersebut.
+Apa saja yang bisa di atur oleh CSS?
+- Warna
+- Tulisan
+- Jarak & Ukuran
+- Posisi & tata letak
+- Tampilan di berbagai ukuran layar
+- Animasi dan efek
+masih banyak lagi, dan ini sangat penting untuk membuat website yang menarik dan nyaman di lihat serta profesional.
 
-Apakah ini penting?
-Ya, ini sangat penting dalam dunia kerja apalagi yang sudah profesional.
-Karena:
-- Konten jadi lebih jelas dan bermakna
-- SEO lebih baik
-- Informasi tidak menyesatkan
-- Website lebih terlihat PROFESIONAL
-- Pembaca percaya dengan konten kiat
+CATATAN :
+    Inline   → CSS ditulis langsung di dalam elemen HTMLmenggunakan  atribut style.
 
-Oke, sekarang kita langsung masuk ke Tag-tag HTML untuk kutipan.
+    Internal → CSS ditulis di dalam tag <style> yang berada di    bagian <head>.
 
-1.HTML <blockquote>
-    Elemen <blockquote> ini digunakan utuk memberi tanda bahwa kutipan ini
-    untuk mengutip teks panjang atau paragraf dari sumber lain.
+    External → CSS ditulis di file terpisah dan dihubungkan keHTML     menggunakan tag <link>.
+
+1.CSS sebaris (Inline CSS)
+    Apa itu CSS sebaris? CSS sebaris adalah CSS yang ditulis langsung di dalam elemen HTML
 
     Contoh penggunaan:
 -->
 
-    <blockquote
-      cite="https://www.indonesiana.id/read/162226/rangkuman-buku-psychology-of-money-perilaku-lebih-menentukan#:~:text=Rangkuman%20buku%20Psychology%20of%20Money%20karya%20Morgan%20Housel.%20Membahas%20mindset%20tentang%20uang%2C%20mindset%20baru%20tentang%20investasi%2C%20dan%20pengelolaan%20keuangan%20yang%20ampuh%20bagi%20Morgan%20dan%20keluarganya%20(yang%20belum%20tentu%20ampuh%20bagi%20orang%20lain).">
-      Rangkuman buku Psychology of Money karya Morgan Housel. Membahas mindset
-      tentang uang, mindset baru tentang investasi, dan pengelolaan keuangan
-      yang ampuh bagi Morgan dan keluarganya (yang belum tentu ampuh bagi orang
-      lain).
-    </blockquote>
+    <h1 style="color: rgb(red, green, blue)">Ini adalah CSS sebaris</h1>
+    <!-- Contoh CSS sebaris dengan banyak style -->
 
-    <!-- 
+    <p
+      style="
+        color: #374151;
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: Arial, sans-serif;
 
-Jadi itu lah kegunaan dari <blockquote> ini, sebenarnya cite itu opsional ya, tapi lebih di anjurkan untuk website profesional
--------------------------------------------------------------------------
+        background-color: #f3f4f6;
+        padding: 15px;
+        max-width: 600px;
+        margin: 20px auto;
 
-2.HTML <q>
-    Tadi kita sudah belajar tentang kutipan panjang, sekarang kita belajar
-    tentang kutipan pendek. Elemen <q> ini digunakan untuk mengutip teks pendek
-    sama juga makna dari kutiang panjang tadi, yaitu untuk memberi tahu
-    browser, mesin pencari, screen reader, dan developer, tapi ini untuk kutipan
-    pendek saja.
-
-    Contoh penggunaan:
--->
-
-    <q
-      cite="https://video.kompas.com/watch/1902788/pelapor-timothy-ronald-tergiur-keuntungan-500-persen-dari-trading-kripto-malah-rugi-rp-3-miliar?source=KOMPASCOM&position=news_terkini__carousel_player_1#:~:text=15-,Pelapor%20Timothy%20Ronald%20Tergiur%20Keuntungan%20500%20Persen%20dari%20Trading%20Kripto%2C%20Malah%20Rugi%20Rp%203%20Miliar,-News">
-      Pelapor Timothy Ronald Tergiur Keuntungan 500 Persen dari Trading Kripto,
-      Malah Rugi Rp 3 Miliar
-    </q>
-
-    <!--
-
-Jadi itu lah kegunaan dari <q> ini sama seperti <blockquote>,dan juga sebenarnya cite itu opsional ya, tapi lebih di anjurkan untuk website profesional    
-------------------------------------------------------------------------    
-3.HTML <abbr>
-    ini adalah tag yang digunakan untuk menandai sebuah singkatan dan memberi tahu arti lengkapnya.
-    
-    Contoh penggunaan:
--->
-
-    <p>
-      <abbr title="Gland Jermano Blessed Siahaan">GJBS</abbr> adalah singkatan
-      nama
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+      ">
+      Ini adalah contoh paragraf yang menggunakan banyak style CSS langsung di
+      dalam atribut <b>style</b>.
     </p>
 
+    <h2
+      style="
+        color: #ffffff;
+        font-size: 32px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+
+        background-color: #380000;
+        padding: 14px 24px;
+        margin-bottom: 20px;
+
+        border-radius: 8px;
+
+        /* RGB Glow Effect */
+        box-shadow: 0 0 8px rgba(255, 0, 0, 0.7), 0 0 16px rgba(0, 255, 0, 0.6),
+          0 0 24px rgba(0, 0, 255, 0.6);
+      ">
+      Belajar CSS Sebaris
+    </h2>
+
+    <button
+      style="
+        background-color: #2563eb;
+        color: #ffffff;
+        font-size: 14px;
+
+        padding: 10px 20px;
+        margin-top: 15px;
+
+        border: none;
+        border-radius: 6px;
+
+        cursor: pointer;
+      ">
+      Klik Saya
+    </button>
+
     <!--
 
-Jadi itu lah kegunaan dari <abbr> ini, tapi jika anda bertanya apakah penting? tanam lah mindset bahwa tag ini penting di ingat tapi untuk website yang berbau literasi saja ya.
-------------------------------------------------------------------------
+    Kesimpulannya, CSS sebaris sangat baik untuk belajar dasar CSS, tetapi bukan solusi untuk website yang besar atau jangka panjang.
+    Di dunia kerja, CSS sebaris biasanya hanya digunakan untuk   contoh, testing, atau kasus khusus, sedangkan styling utama dipisahkan ke file CSS eksternal.
 
-4.HTML <address>
-    ini adalah elemen HTML yang digunakan untuk informasi kontas atau identitas penulis atau pemilik dokumen HTML ini, dan juga <address> ini bisa digunakan untuk menampilkan alamat kontak.
-    
+2.CSS Internal (Internal CSS)
+    CSS Internal adalah CSS yang dituliskan di dalam tag <style> tepatnya di bagian <head>
+
     Contoh penggunaan:
--->
+----------------------------------------
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
 
-    <address>
-      Kontak Admin Website Gland S<br />
-      Email : <a href="gland@gmail.com">gland@gmail.com</a><br />
-      Alamat: Medan, Indonesia
-    </address>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
 
-    <!--
-    
-Jadi itu lah kegunaan dari elemen <address> ini, dan bukan hanya itu elemen ini juga <address> ini biasanya juga digunakan untuk SEO
-------------------------------------------------------------------------
+</body>
+</html>
+----------------------------------------
+    CSS Internal adalah cara penulisan CSS yang ditempatkan di dalam tag <style> pada bagian <head> HTML. Metode ini digunakan untuk mengatur tampilan elemen pada satu halaman saja, cocok untuk pembelajaran, percobaan, atau proyek kecil. Namun, dalam praktik profesional, CSS Internal kurang efisien untuk proyek besar karena sulit dikelola dan tidak bisa digunakan ulang di banyak halaman.
 
-5.HTML <cite>
-    ini adalah elemen HTML yang digunakan untuk menandai judul sebuah kraya.
-    karya dimaksud bisa berupa:
-    - Buku
-    - Artikel
-    - Puisi
-    - Lagu
-    - Film
-    - Acara TV
-    - Lukisan
-    - Dokumentasi resmi
-  
-    Contoh penggunaan:  
--->
-    <p><cite>The Psychology of Money</cite> By Morgan Housel</p>
-
-    <!--
-
-Jadi itu lah kegunaan dari elemen <cite> ini, yaitu menendai sebuah judul karya.
-------------------------------------------------------------------------
-
-6.HTML <bdo>
-    ini adalah elem html yang dugunakan untuk mengubah arah teks. bisa dari - rtl - kanan ke kiri atau - ltr -kiri ke kanan(normal).a
+3.CSS Eksternal (External CSS)
+    CSS External adalah CSS yang di tuliskan dengan file terpisah dengan menggunakan extensi ".css",yang berarti
+    file CSS dan HTML di pisahkan secara tempat tapi masih memiliki hubungan.
 
     Contoh penggunaan:
-    ~ rtl ~
--->
-    <bdo dir="rtl">Siapa saja yang bisa Melakukan ini</bdo><br />
-    <!--
-    ~ ltr ~
--->
-    <bdo dir="ltr">Siapa saja yang bisa Melakukan ini</bdo>
-    <!--
-Jadi itu lah kegunaan dari elemen <bdo> ini,bisa membalikkan arah teks, dan biasanya juga ini digunakan di dunia kerja, membuat website internasional seperti Website Arab/Timur Tengah dll.
-------------------------------------------------------------------------
+-----------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">  |-> ini lah link yang di gunakan untuk menghubungkan file CSS Eksternal 
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+-----------------------------------------------------------
+    Fungsi <link>:
 
+Menghubungkan HTML dengan file CSS
 
+Memberi tahu browser: “pakai style dari file ini”
 
+    CSS eksternal adalah cara paling rapi dan profesional untuk mengatur tampilan website.
+    Dipakai untuk banyak halaman, mudah dirawat, dan menjadi standar di dunia kerja.
 
 
-KESIMPULAN MATERI HARI INI
 
-HTML Quotation & Reference Elements
+    KESIMPULANNYA:
 
-Materi hari ini mengajarkan bahwa HTML bukan hanya soal menampilkan teks, tetapi memberi makna pada teks.
+CSS digunakan untuk mengatur tampilan website agar rapi, menarik, dan nyaman dilihat.
+Terdapat tiga cara penulisan CSS: Inline, Internal, dan Eksternal.
+Untuk pembelajaran, inline dan internal CSS sangat membantu memahami dasar, namun CSS eksternal adalah standar yang digunakan di dunia kerja karena lebih rapi dan mudah dirawat.
 
-Dengan elemen-elemen kutipan dan referensi, kita memberi tahu:
-
-Browser → bagaimana teks harus dipahami
-
-Mesin pencari (SEO) → mana kutipan, mana sumber, mana identitas
-
-Screen reader → konteks yang benar untuk aksesibilitas
-
-Developer lain → struktur konten yang jelas dan profesional
-
-Ini adalah HTML berbasis literasi & kredibilitas, bukan HTML untuk CRUD atau UI saja.
-
-RINGKASAN TIAP ELEMEN + PERAN DI DUNIA KERJA
-1️⃣ <blockquote> — Kutipan Panjang
-
-Fungsi utama:
-
-Menandai kutipan panjang dari sumber lain
-
-Menunjukkan bahwa isi teks bukan opini penulis
-
-Di dunia kerja:
-
-Website edukasi
-
-Blog artikel
-
-Portal berita
-
-Dokumentasi
-
-Penting atau tidak?
-
-❌ Tidak penting untuk dashboard/admin
-
-✅ Penting untuk web berbasis konten & literasi
-
-Peran SEO:
-
-Membantu Google membedakan konten asli vs kutipan
-
-Menghindari kesan plagiarisme
-
-Meningkatkan kejelasan struktur konten
-
-📌 SEO tidak instan, tapi membantu kepercayaan jangka panjang.
-
-2️⃣ <q> — Kutipan Pendek
-
-Fungsi utama:
-
-Menandai kutipan singkat di dalam kalimat
-
-Di dunia kerja:
-
-Artikel
-
-Blog
-
-Konten edukasi ringan
-
-Penting atau tidak?
-
-❌ Jarang dipakai di aplikasi
-
-✅ Berguna untuk artikel profesional
-
-Peran SEO:
-
-Memberi makna bahwa teks itu kutipan
-
-Membantu struktur konten literasi
-
-3️⃣ <abbr> — Singkatan
-
-Fungsi utama:
-
-Menjelaskan arti singkatan dengan title
-
-Di dunia kerja:
-
-Dokumentasi teknis
-
-Blog teknologi
-
-Website edukasi
-
-Penting atau tidak?
-
-❌ Tidak wajib di semua proyek
-
-✅ Penting untuk konten edukatif & teknis
-
-Peran SEO & aksesibilitas:
-
-Mesin pencari memahami konteks istilah
-
-Screen reader membaca dengan lebih jelas
-
-Konten lebih ramah pemula
-
-4️⃣ <address> — Identitas & Kontak
-
-Fungsi utama:
-
-Menyimpan informasi penulis atau pemilik konten
-
-Di dunia kerja:
-
-Blog
-
-Artikel
-
-Company profile
-
-Footer website
-
-Penting atau tidak?
-
-❌ Tidak penting di CRUD/admin
-
-✅ Penting untuk website publik & profesional
-
-Peran SEO (Trust):
-
-Meningkatkan kredibilitas
-
-Mendukung E-E-A-T (trust & authority)
-
-Website tidak terlihat anonim
-
-5️⃣ <cite> — Judul Karya
-
-Fungsi utama:
-
-Menandai judul buku, artikel, dokumen, film, dll
-
-Bukan nama orang
-
-Di dunia kerja:
-
-Artikel
-
-Dokumentasi
-
-Blog teknis
-
-Penting atau tidak?
-
-❌ Tidak wajib di aplikasi
-
-✅ Penting untuk konten referensi
-
-Peran SEO:
-
-Membantu mesin mengenali sumber & referensi
-
-Menambah kredibilitas konten
-
-6️⃣ <bdo> — Arah Teks
-
-Fungsi utama:
-
-Mengubah arah baca teks (rtl / ltr)
-
-Di dunia kerja:
-
-Website internasional
-
-Website Arab / Timur Tengah
-
-Aplikasi multibahasa
-
-Penting atau tidak?
-
-❌ Tidak penting untuk web lokal
-
-✅ Penting untuk produk global
-
-Peran SEO:
-
-Bukan SEO ranking
-
-Tapi penting untuk usability & aksesibilitas internasional
-
-KESIMPULAN BESAR (INTI MATERI)
-
-Elemen-elemen ini:
-
-❌ Tidak sering dipakai di CRUD
-
-❌ Tidak wajib di semua proyek
-
-✅ Sangat penting di web berbasis konten, literasi, dan publik
-
-HTML profesional dinilai dari:
-
-Kejelasan struktur
-
-Kejujuran konten
-
-Kredibilitas
-
-Kemudahan dipahami mesin & manusia
-
-SEO yang dibantu oleh elemen ini adalah:
-
-SEO berbasis makna, struktur, dan kepercayaan — bukan trik cepat.
-
-
+Sebagai lanjutan, saya berencana membuat repository css-fundamentals-learning untuk mempelajari CSS lebih dalam dengan referensi dari W3Schools.
 
 -->
-    <p></p>
   </body>
 </html>
