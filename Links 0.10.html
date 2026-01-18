@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Favicon HTML</title>
+
+    <!-- 
+        =========================================
+        APA ITU FAVICON?
+        =========================================
+        Favicon (Favorite Icon) adalah ikon kecil yang:
+        - Muncul di tab browser
+        - Bookmark / favorite
+        - History browser
+        - Shortcut (mobile / desktop)
+
+        Favicon membantu:
+        - Identitas website
+        - Profesionalitas
+        - Branding
+    -->
+
+    <!-- 
+        =========================================
+        FAVICON FORMAT ICO (PALING UMUM & AMAN)
+        =========================================
+        - Format: .ico
+        - Support hampir semua browser
+        - Biasanya berisi banyak ukuran (16x16, 32x32, dll)
+    -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- 
+        =========================================
+        FAVICON FORMAT PNG
+        =========================================
+        - Kualitas lebih tajam
+        - Ukuran eksplisit diperlukan
+    -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+
+    <!-- 
+        =========================================
+        FAVICON FORMAT SVG (MODERN)
+        =========================================
+        - Vektor (tidak pecah)
+        - Ukuran fleksibel
+        - Cocok untuk browser modern
+    -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- 
+        =========================================
+        APPLE TOUCH ICON (iOS / iPhone / iPad)
+        =========================================
+        - Ikon saat website disimpan ke Home Screen
+        - Wajib untuk tampilan profesional di iOS
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+    <!-- 
+        =========================================
+        ANDROID / PWA ICON
+        =========================================
+        - Digunakan untuk Progressive Web App
+        - Biasanya dikombinasikan dengan manifest.json
+    -->
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <!-- 
+        Konten website ditulis di sini
+    -->
+  </body>
+</html>
