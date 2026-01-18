@@ -1,163 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!--
+    
+  Basic CSS Display for Web - Dasar Tampilan CSS untuk Web
+
+Basic CSS Display for Web adalah materi dasar yang membahas bagaimana tampilan elemen
+dapat di atur dan d tampilkan di halaman web menggunakan CSS (Cascading Style Sheets).
+Kenapa di sebut Display?
+- Warna teks
+- Ukuran dan jenis huruf
+- Jarak antara elemen
+- batas (border)
+- tampilan dasar halaman web
+
+Tanpa CSS, website hanya polos dan sulit di baca.
+
+1.CSS Color, Font, dan Size (Dasar Tampilan Teks)
+
+Bagian ini membahas cara mengatur tampilan tulisan di website.
+Karena hampir semua website berisi teks, maka CSS untuk teks adalah dasar paling penting dalam CSS.
+
+Contoh penggunaan
+-->
+    <style>
+      h1 {
+        color: rgb(0, 123, 123);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 30px;
+      }
+      h2 {
+        border: 2px solid rgb(0, 159, 181);
+        border-top: 2px solid rgb(1, 1, 1);
+        border-bottom: 2px solid rgb(152, 0, 0);
+        border-radius: 10px;
+      }
+      h3 {
+        border: 2px solid rgb(0, 123, 123);
+        padding: 80px;
+        text-align: center;
+      }
+      .p1 {
+        border: 10px solid rgb(0, 123, 123);
+        margin: 10px;
+      }
+      .p2 {
+        border: 2px solid rgb(0, 159, 181);
+        margin-top: 20px;
+        padding: 10px;
+        color: rgb(0, 123, 123);
+        font-style: italic;
+        font-size: x-large;
+        border-radius: 10px;
+      }
+    </style>
   </head>
   <body>
+    <h1>CSS STYLE</h1>
     <!--
+jadi itu lah kegunaan dari CSS color, font, dan size.
 
-HTML Styles - CSS
+color → warna tulisan
 
-HTML CSS adalah gaya atau style yang digunakan untuk mengatur tampilan halaman web
-sederhananya HTML itu rumah sedangkan CSS itu warna dan dekorasi Rumah tersebut.
-Apa saja yang bisa di atur oleh CSS?
-- Warna
-- Tulisan
-- Jarak & Ukuran
-- Posisi & tata letak
-- Tampilan di berbagai ukuran layar
-- Animasi dan efek
-masih banyak lagi, dan ini sangat penting untuk membuat website yang menarik dan nyaman di lihat serta profesional.
+font-family → jenis huruf
 
-CATATAN :
-    Inline   → CSS ditulis langsung di dalam elemen HTMLmenggunakan  atribut style.
-
-    Internal → CSS ditulis di dalam tag <style> yang berada di    bagian <head>.
-
-    External → CSS ditulis di file terpisah dan dihubungkan keHTML     menggunakan tag <link>.
-
-1.CSS sebaris (Inline CSS)
-    Apa itu CSS sebaris? CSS sebaris adalah CSS yang ditulis langsung di dalam elemen HTML
-
-    Contoh penggunaan:
+font-size → ukuran tulisan
 -->
+    <h2>CSS Border</h2>
+    <!--
+Jenis Border yang Umum
+Beberapa jenis border:
 
-    <h1 style="color: rgb(red, green, blue)">Ini adalah CSS sebaris</h1>
-    <!-- Contoh CSS sebaris dengan banyak style -->
+solid   → garis lurus
+dashed  → garis putus-putus
+dotted  → titik-titik
+double  → garis ganda
+dll
 
-    <p
-      style="
-        color: #374151;
-        font-size: 16px;
-        line-height: 1.6;
-        font-family: Arial, sans-serif;
-
-        background-color: #f3f4f6;
-        padding: 15px;
-        max-width: 600px;
-        margin: 20px auto;
-
-        border: 1px solid #d1d5db;
-        border-radius: 8px;
-      ">
-      Ini adalah contoh paragraf yang menggunakan banyak style CSS langsung di
-      dalam atribut <b>style</b>.
+CSS Border digunakan untuk memberi garis pembatas pada elemen HTML.
+Border membantu tampilan lebih jelas dan sangat berguna saat belajar maupun membuat komponen web.
+-->
+    <h3>Padding</h3>
+    <!--
+CSS Padding adalah jarak di dalam elemen, antara teks dan border.
+Padding membuat tampilan lebih rapi, lega, dan nyaman dilihat.
+-->
+    <p class="p1">Margin</p>
+    <!--
+CSS Margin adalah jarak di luar elemen, digunakan untuk mengatur spasi antar elemen agar tampilan rapi dan nyaman dilihat.
+-->
+    <br />
+    <p class="p2">
+      sekarang mari kita lanjutkan dengan penjelasan lebih detail tentang CSS.
     </p>
-
-    <h2
-      style="
-        color: #ffffff;
-        font-size: 32px;
-        font-family: Arial, sans-serif;
-        text-align: center;
-
-        background-color: #380000;
-        padding: 14px 24px;
-        margin-bottom: 20px;
-
-        border-radius: 8px;
-
-        /* RGB Glow Effect */
-        box-shadow: 0 0 8px rgba(255, 0, 0, 0.7), 0 0 16px rgba(0, 255, 0, 0.6),
-          0 0 24px rgba(0, 0, 255, 0.6);
-      ">
-      Belajar CSS Sebaris
-    </h2>
-
-    <button
-      style="
-        background-color: #2563eb;
-        color: #ffffff;
-        font-size: 14px;
-
-        padding: 10px 20px;
-        margin-top: 15px;
-
-        border: none;
-        border-radius: 6px;
-
-        cursor: pointer;
-      ">
-      Klik Saya
-    </button>
-
-    <!--
-
-    Kesimpulannya, CSS sebaris sangat baik untuk belajar dasar CSS, tetapi bukan solusi untuk website yang besar atau jangka panjang.
-    Di dunia kerja, CSS sebaris biasanya hanya digunakan untuk   contoh, testing, atau kasus khusus, sedangkan styling utama dipisahkan ke file CSS eksternal.
-
-2.CSS Internal (Internal CSS)
-    CSS Internal adalah CSS yang dituliskan di dalam tag <style> tepatnya di bagian <head>
-
-    Contoh penggunaan:
-----------------------------------------
-    <!DOCTYPE html>
-<html>
-<head>
-<style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-</style>
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
-</html>
-----------------------------------------
-    CSS Internal adalah cara penulisan CSS yang ditempatkan di dalam tag <style> pada bagian <head> HTML. Metode ini digunakan untuk mengatur tampilan elemen pada satu halaman saja, cocok untuk pembelajaran, percobaan, atau proyek kecil. Namun, dalam praktik profesional, CSS Internal kurang efisien untuk proyek besar karena sulit dikelola dan tidak bisa digunakan ulang di banyak halaman.
-
-3.CSS Eksternal (External CSS)
-    CSS External adalah CSS yang di tuliskan dengan file terpisah dengan menggunakan extensi ".css",yang berarti
-    file CSS dan HTML di pisahkan secara tempat tapi masih memiliki hubungan.
-
-    Contoh penggunaan:
------------------------------------------------------------
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="styles.css">  |-> ini lah link yang di gunakan untuk menghubungkan file CSS Eksternal 
-</head>
-<body>
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-</body>
-</html>
------------------------------------------------------------
-    Fungsi <link>:
-
-Menghubungkan HTML dengan file CSS
-
-Memberi tahu browser: “pakai style dari file ini”
-
-    CSS eksternal adalah cara paling rapi dan profesional untuk mengatur tampilan website.
-    Dipakai untuk banyak halaman, mudah dirawat, dan menjadi standar di dunia kerja.
-
-
-
-    KESIMPULANNYA:
-
-CSS digunakan untuk mengatur tampilan website agar rapi, menarik, dan nyaman dilihat.
-Terdapat tiga cara penulisan CSS: Inline, Internal, dan Eksternal.
-Untuk pembelajaran, inline dan internal CSS sangat membantu memahami dasar, namun CSS eksternal adalah standar yang digunakan di dunia kerja karena lebih rapi dan mudah dirawat.
-
-Sebagai lanjutan, saya berencana membuat repository css-fundamentals-learning untuk mempelajari CSS lebih dalam dengan referensi dari W3Schools.
-
--->
   </body>
 </html>
+
+<!--
+
+INTI MATERINYA
+
+File HTML + CSS ini membahas dasar tampilan elemen web menggunakan CSS, yang mencakup:
+Warna teks (color)
+Jenis huruf (font-family)
+Ukuran teks (font-size)
+Garis pembatas elemen (border)
+Jarak di dalam elemen (padding)
+Jarak antar elemen (margin)
+Ini adalah fondasi visual dari sebuah website.
+Tanpa bagian ini, web hanya berisi teks polos tanpa struktur visual yang nyaman dibaca.
+
+DIGUNAKAN UNTUK APA?
+
+a. CSS Color, Font, dan Size
+
+Digunakan untuk:
+Membuat teks mudah dibaca
+Menentukan identitas visual website
+Menyesuaikan gaya tulisan dengan konteks (judul, isi, catatan)
+
+Di dunia kerja:
+Wajib dipakai di semua halaman
+Menjadi dasar sebelum masuk ke layout, responsive, dan framework
+
+b. CSS Border
+
+Digunakan untuk:
+Memberi batas visual antar elemen
+Membantu debug layout
+Membuat komponen terlihat jelas (card, box, section)
+
+Di dunia kerja:
+Sangat umum pada card UI, form, tabel, dan layout konten
+
+c. CSS Padding
+
+Digunakan untuk:
+Memberi ruang di dalam elemen
+Membuat teks tidak menempel ke border
+Meningkatkan kenyamanan visual
+
+Di dunia kerja:
+Wajib pada hampir semua komponen UI
+
+d. CSS Margin
+
+Digunakan untuk:
+Mengatur jarak antar elemen
+Menjaga tampilan tetap rapi dan tidak saling bertabrakan
+
+Di dunia kerja:
+Sangat penting untuk layout yang bersih dan konsisten
+
+
+KESIMPULAN
+
+Kode di atas mengajarkan dasar tampilan web yang wajib dikuasai
+CSS berfungsi untuk membuat HTML hidup dan nyaman dilihat
+Color, font, size, border, padding, dan margin adalah inti dari CSS dasar
+Materi ini bukan opsional, tapi pondasi untuk semua pengembangan web selanjutnya
+Jika dasar CSS ini dipahami dengan benar,
+maka belajar layout, responsive, dan framework akan jauh lebih mudah.
+
+-->
