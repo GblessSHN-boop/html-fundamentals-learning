@@ -1,29 +1,32 @@
 # 🔙 FLASHBACK — TEST HTML 0.1 → 0.10
 
-Repository / folder ini berisi **kilas balik (flashback)** dari proses belajar HTML dasar
-mulai dari **HTML 0.1 sampai HTML 0.10**.
+Repository / folder ini berisi **flashback (kilas balik)** proses belajar  
+**HTML dasar dari hari 0.1 sampai hari 0.10**.
 
-Semua materi di sini **bukan sekadar latihan**,  
-tetapi **ujian bertahap** untuk memastikan fondasi HTML benar-benar kuat
-sebelum lanjut ke tahap web development yang lebih kompleks.
+Semua file di dalam folder ini **bukan latihan biasa**,  
+melainkan **test / ujian bertahap** untuk memastikan pemahaman HTML benar-benar kuat  
+sebelum lanjut ke materi HTML berikutnya dan tahap web development.
 
 ---
 
 ## 🎯 Tujuan Flashback & Test
 
-- Mengulang kembali materi HTML dasar dari nol
-- Menguji pemahaman, bukan sekadar hafalan
-- Melatih pola pikir terstruktur dalam membuat halaman web
-- Menyiapkan diri ke **project dunia nyata**
+Flashback ini dibuat untuk:
+
+- Mengulang kembali HTML dari nol
+- Menguji pemahaman struktur HTML
+- Melatih kerapian dan logika penulisan HTML
+- Memastikan siap lanjut ke materi berikutnya
 
 ---
 
 ## 🧪 Cakupan Test HTML 0.1 – 0.10
 
-Materi yang sudah dipelajari dan diuji meliputi:
+Materi yang diuji pada tahap ini meliputi:
 
-- Struktur dasar HTML (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`)
-- Heading (`<h1>` – `<h6>`)
+- Struktur dasar HTML  
+  (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`)
+- Judul / Heading (`<h1>` – `<h6>`)
 - Paragraf (`<p>`)
 - Komentar HTML
 - Link (`<a>`)
@@ -31,108 +34,118 @@ Materi yang sudah dipelajari dan diuji meliputi:
 - List (`<ul>`, `<ol>`, `<li>`)
 - Table (`<table>`, `<tr>`, `<th>`, `<td>`)
 - Semantic HTML dasar
-- CSS dasar (color, text-align, font-size)
+- Style dasar **langsung di HTML** (`style=""` atau `<style>`)
+
+> Tidak menggunakan framework  
+> Tidak menggunakan JavaScript  
+> Fokus **murni HTML**
 
 ---
 
-## 🛣️ UJIAN PROJECT ROADMAP BELAJAR HTML (HARI 1 → HARI 10)
+## 🛣️ Roadmap Test & Project HTML (Hari 1 → Hari 10)
 
-Semua project di bawah ini **bersifat WAJIB** sebagai latihan fondasi.
-
----
-
-## 🟢 LEVEL 1 — PROJECT SEDERHANA (Pemula Kuat)
-
-📌 **Fokus utama:** struktur HTML dan teks  
-📌 **Tujuan:** memahami isi sebelum tampilan
-
-### 1️⃣ Halaman Profil Diri  
-### 2️⃣ Halaman Biodata Mahasiswa  
-### 3️⃣ Halaman Motivasi Pribadi  
-### 4️⃣ Halaman Artikel Pendek  
-### 5️⃣ Halaman Kontak  
-
-➡️ Level ini melatih **logika HTML dasar** dan **makna tag**, bukan desain.
+Semua project di bawah ini **WAJIB diselesaikan** sebagai fondasi HTML.
 
 ---
 
-## 🟡 LEVEL 2 — STRUKTUR DATA (HTML TABLE)
+## LEVEL 1 — PROJECT SEDERHANA (PEMULA KUAT)
 
-📌 **Fokus:** data rapi dan terstruktur
+Fokus: **struktur HTML & teks**
 
-### 6️⃣ Tabel Data Mahasiswa  
-### 7️⃣ Tabel Jadwal Kuliah  
-### 8️⃣ Tabel Daftar Nilai  
-### 9️⃣ Tabel Produk Sederhana  
-### 🔟 Tabel Data Karyawan  
+1. Halaman Profil Diri  
+2. Halaman Biodata Mahasiswa  
+3. Halaman Motivasi Pribadi  
+4. Halaman Artikel Pendek  
+5. Halaman Kontak  
 
-➡️ Level ini mensimulasikan **data dunia nyata**.
-
----
-
-## 🔵 LEVEL 3 — MULTI HALAMAN & LINK
-
-📌 **Fokus:** navigasi antar halaman
-
-### 1️⃣1️⃣ Website Multi Page  
-### 1️⃣2️⃣ Website Artikel Edukasi  
-### 1️⃣3️⃣ Website Portofolio HTML  
-### 1️⃣4️⃣ Website Dokumentasi Mini  
-### 1️⃣5️⃣ Website Literasi / Edukasi  
-
-➡️ Level ini membuat website terasa **hidup dan terhubung**.
+Tujuan level ini adalah memastikan:
+- Paham fungsi `<h1>` dan `<p>`
+- HTML rapi dan terbaca
+- Tidak asal menulis tag
 
 ---
 
-## 🔴 LEVEL 4 — SEMI PROFESIONAL
+## LEVEL 2 — STRUKTUR DATA (HTML TABLE)
 
-📌 **Fokus:** simulasi dunia kerja
+Fokus: **data rapi dan terstruktur**
 
-### 1️⃣6️⃣ Website Company Profile  
-### 1️⃣7️⃣ Website Landing Page  
-### 1️⃣8️⃣ Website Data Admin (statis)  
-### 1️⃣9️⃣ Website Artikel Referensi  
-### 2️⃣0️⃣ Website Portofolio Final  
+6. Tabel Data Mahasiswa  
+7. Tabel Jadwal Kuliah  
+8. Tabel Daftar Nilai  
+9. Tabel Produk Sederhana  
+10. Tabel Data Karyawan  
 
-➡️ Level ini menandai **transisi dari belajar ke berkarya**.
+Level ini mensimulasikan **data dunia nyata**.
 
 ---
 
-## 🧩 Bahasa & Teknologi yang Digunakan
+## LEVEL 3 — MULTI HALAMAN & LINK
 
-- 🧱 **HTML5**
-- 🎨 **CSS Dasar**
-- 🧠 Fokus ke struktur & logika
-- ❌ Tanpa framework
-- ❌ Tanpa JavaScript
+Fokus: **navigasi antar halaman**
 
-🔗 Repo utama HTML:  
-👉 **html-fundamentals-learning**  
-https://github.com/GblessSHN-boop/html-fundamentals-learning
+11. Website Multi Page  
+12. Website Artikel Edukasi  
+13. Website Portofolio HTML  
+14. Website Dokumentasi Mini  
+15. Website Literasi / Edukasi  
+
+Level ini membuat website mulai **terhubung antar file**.
+
+---
+
+## LEVEL 4 — SEMI PROFESIONAL
+
+Fokus: **simulasi dunia kerja**
+
+16. Website Company Profile  
+17. Website Landing Page  
+18. Website Data Admin (statis)  
+19. Website Artikel Referensi  
+20. Website Portofolio Final  
+
+Level ini adalah **penutup materi HTML dasar**.
+
+---
+
+## 🧱 Bahasa yang Digunakan
+
+<!-- HTML -->
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/>
+</p>
+
+🔗 Repository utama HTML:  
+[**html-fundamentals-learning**](https://github.com/GblessSHN-boop/html-fundamentals-learning)
 
 ---
 
 ## 🧠 Kesimpulan
 
-Belajar HTML **bukan soal cepat**, tapi soal **kuat di dasar**.
+HTML adalah **pondasi utama web development**.
 
-Flashback HTML 0.1 – 0.10 ini menjadi:
-- Pondasi berpikir web developer
-- Bukti proses belajar bertahap
-- Modal awal menuju dunia web development profesional
+Jika fondasi ini lemah,  
+maka CSS dan JavaScript akan terasa berat.
 
-> “Strong fundamentals create strong developers.”
+Flashback HTML 0.1 – 0.10 ini dibuat sebagai:
+- Bukti proses belajar
+- Dokumentasi test HTML dasar
+- Penentu kesiapan naik level
 
 ---
 
-## 🌐 Langkah Selanjutnya
+## ✅ Tahap Lanjutan
 
-Setelah HTML:
-- CSS lebih dalam
-- Layout modern
-- Responsive design
-- Masuk ke JavaScript
+**JIKA ANDA SUDAH MELEWATI TEST  
+hari 0.1.html – hari 0.10.html**,  
+**ANDA BOLEH LANJUT KE MATERI `html 01.0.html`.**
 
-🔗 Lanjutan belajar web development:  
-👉 **web-development-learning**  
-https://github.com/GblessSHN-boop/web-development-learning
+---
+
+## 🌐 Arah Web Development
+
+<p>
+  <img src="https://img.shields.io/badge/Web%20Development-000000?style=flat&logo=googlechrome&logoColor=white"/>
+</p>
+
+🔗 Lanjutan pembelajaran:  
+[**web-development-learning**](https://github.com/GblessSHN-boop/web-development-learning)
